@@ -1,6 +1,6 @@
-/assets/images
+# /assets/images
 /assets/fonts
-/assets/audio
+# /assets/audio
 .DS_Store
 tasks-wip.todo
 notes.md
