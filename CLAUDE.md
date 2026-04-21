@@ -13,3 +13,11 @@ Monster Tamer is a 2D RPG built with Vanilla JavaScript and the Phaser 3 framewo
 - **Dependencies:** DO NOT install any npm packages. The game runs natively in the browser via an HTTP server.
 - **Destructive Actions:** Never execute destructive git commands without explicit user confirmation.
 - **Memory Leaks:** When modifying `Scenes`, you must ensure that any custom event listeners or timers are properly destroyed in the Scene's `shutdown` or `destroy` methods.
+
+## Verification
+- Prefer targeted checks first. If you change battle logic, verify only the battle flow affected rather than touching unrelated systems.
+- If you modify a Scene, verify the Scene can be entered and exited repeatedly without duplicate listeners, duplicate timers, or retained UI objects.
+- Summarize exactly what you verified and what you could not verify in-browser.
+
+## Scope
+- Keep changes minimal and localized. Do not refactor unrelated files unless required to complete the task safely.
